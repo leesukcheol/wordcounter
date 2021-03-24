@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>안녕하세요. 여기서 글자를 세세요! </h1>
+
+<a href="{%url 'about'%}">ABOUT</a>
+
+<form action="{%url 'result'%}"><!-- 폼에서 입력한 게 어디로 향하는지는 액션이 알려준대..-->
+    <textarea cols="40" rows="10" name="fulltext"></textarea>
+    <br><!-- 40곱하기10 크기의 텍스트 에어리어에서 작성해서-->
+    <input type="submit" value="Count">
+    <!-- 제출하기를 꾹 누르면 views.py에 있는 result함수에 의해 result.html이 호출되어야함-->
+
+</form>
+</body>
+</html>
